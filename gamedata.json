@@ -1,0 +1,24 @@
+{
+    "champ": {
+      "name": "Waiting Room",
+      "desc": "You are in a waiting room with sad leather couches and old magazines. There is a poster on the wall of a cat holding onto a tree branch and the words, \"Glue Corp. holds the world together!\"  There is a desk with a ringing phone on it. There is a door to the north.",
+      "contextualHelp": "Try answering the phone",
+      "action": {
+          "answer phone": "Hello?"
+      },
+      "exit": {
+        "north": "room2",
+        "east": "-1",
+        "south": "-1",
+        "west": "-1"
+      },
+      "object": {
+          "spoon": "This spoon is shiny and tiny. Could fit easily into a jar of peanut butter.",
+          "magazine": "The cover reads, Glue Enthusiasts Quarterly, issue #352. The pages are stuck together firmly."
+      },
+      "mobile": null
+}
+
+    },
+
+  
