@@ -5,6 +5,17 @@ function Item(name, desc, take){
 	self.name = name;
 	self.desc = desc;
 	self.take = take;
+	pickUp = function pickUp(object){
+	if (object.take > 0) {
+		console.log('You take the', object.name);
+		object.take = object.take -1;
+		//player.inv.push(object);
+	}	
+ 
+	else {
+		console.log(self.name,' cannot be taken');
+	}
+}
 	
 }
 //Output description text for this item
@@ -63,12 +74,12 @@ function pickUp(object){
 }
 
 //Function Testing
-pickUp(sand);
-pickUp(spoon);
+//pickUp(sand);
+//pickUp(spoon);
 
 
 
-
+module.exports = Item;
 
 
 

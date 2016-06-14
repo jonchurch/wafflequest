@@ -32,3 +32,5 @@ Player.prototype.print_inv = function(){
 
  player.print_inv();  //Inventory: Pizza, Lanter, Napkin(2)
  */
+
+module.exports = Player;
