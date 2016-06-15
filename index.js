@@ -63,7 +63,7 @@ var map = {
 	},
 } //end top level location object
 
-var player = new Player();
+function Player();
 player.current_location = map.champ;
 
 var Game = function(){
@@ -77,3 +77,9 @@ console.log(player.current_location.desc);
 //pickUp(spoon); //throws err because pickUp is defined only in item.js and item.js is being stored in Item obj currently
 console.log(Item.spoon);
 
+var Player = function(){
+	self = this
+	self.inv = [];
+	self.is_winner = false;
+	self.current_location = 'champ';
+}
